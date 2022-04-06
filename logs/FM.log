@@ -1,0 +1,69 @@
+2022-03-17 12:19:39.385414: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2022-03-17 12:19:49.090912: I tensorflow/compiler/jit/xla_cpu_device.cc:41] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2022-03-17 12:19:49.092867: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcuda.so.1
+2022-03-17 12:19:49.151316: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties: 
+pciBusID: 0000:17:00.0 name: NVIDIA GeForce GTX 1080 Ti computeCapability: 6.1
+coreClock: 1.683GHz coreCount: 28 deviceMemorySize: 10.92GiB deviceMemoryBandwidth: 451.17GiB/s
+2022-03-17 12:19:49.151853: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 1 with properties: 
+pciBusID: 0000:65:00.0 name: NVIDIA GeForce GTX 1080 Ti computeCapability: 6.1
+coreClock: 1.683GHz coreCount: 28 deviceMemorySize: 10.91GiB deviceMemoryBandwidth: 451.17GiB/s
+2022-03-17 12:19:49.151887: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2022-03-17 12:19:49.393318: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.10
+2022-03-17 12:19:49.393478: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.10
+2022-03-17 12:19:49.558919: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2022-03-17 12:19:49.623735: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2022-03-17 12:19:49.886107: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.10
+2022-03-17 12:19:49.951014: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.10
+2022-03-17 12:19:50.545958: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.7
+2022-03-17 12:19:50.551744: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0, 1
+2022-03-17 12:19:50.572440: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  SSE4.1 SSE4.2 AVX AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2022-03-17 12:19:50.923802: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties: 
+pciBusID: 0000:17:00.0 name: NVIDIA GeForce GTX 1080 Ti computeCapability: 6.1
+coreClock: 1.683GHz coreCount: 28 deviceMemorySize: 10.92GiB deviceMemoryBandwidth: 451.17GiB/s
+2022-03-17 12:19:50.924359: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 1 with properties: 
+pciBusID: 0000:65:00.0 name: NVIDIA GeForce GTX 1080 Ti computeCapability: 6.1
+coreClock: 1.683GHz coreCount: 28 deviceMemorySize: 10.91GiB deviceMemoryBandwidth: 451.17GiB/s
+2022-03-17 12:19:50.924389: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2022-03-17 12:19:50.924417: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.10
+2022-03-17 12:19:50.924429: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.10
+2022-03-17 12:19:50.924439: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2022-03-17 12:19:50.924449: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2022-03-17 12:19:50.924460: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.10
+2022-03-17 12:19:50.924482: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.10
+2022-03-17 12:19:50.924493: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.7
+2022-03-17 12:19:50.926423: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0, 1
+2022-03-17 12:19:50.937593: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2022-03-17 12:19:55.871734: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1261] Device interconnect StreamExecutor with strength 1 edge matrix:
+2022-03-17 12:19:55.871795: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1267]      0 1 
+2022-03-17 12:19:55.871804: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1280] 0:   N Y 
+2022-03-17 12:19:55.871808: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1280] 1:   Y N 
+2022-03-17 12:19:55.886808: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1406] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10261 MB memory) -> physical GPU (device: 0, name: NVIDIA GeForce GTX 1080 Ti, pci bus id: 0000:17:00.0, compute capability: 6.1)
+2022-03-17 12:19:55.943139: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1406] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:1 with 10034 MB memory) -> physical GPU (device: 1, name: NVIDIA GeForce GTX 1080 Ti, pci bus id: 0000:65:00.0, compute capability: 6.1)
+2022-03-17 12:19:55.943533: I tensorflow/compiler/jit/xla_gpu_device.cc:99] Not creating XLA devices, tf_xla_enable_xla_devices not set
+WARNING:tensorflow:AutoGraph could not transform <function decode at 0x7fde2af55790> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+WARNING:tensorflow:AutoGraph could not transform <bound method LinearLayer.call of <Layers.LinearLayer.LinearLayer object at 0x7fddcbece700>> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+Epoch 1/100
+WARNING:tensorflow:AutoGraph could not transform <bound method FMLayer.call of <Layers.FMLayer.FMLayer object at 0x7fddcbece6a0>> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+2022-03-17 12:19:57.551624: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:116] None of the MLIR optimization passes are enabled (registered 2)
+2022-03-17 12:19:57.595819: I tensorflow/core/platform/profile_utils/cpu_utils.cc:112] CPU Frequency: 3499910000 Hz
+3668/3668 - 1658s - loss: 0.4595 - auc: 0.7946 - val_loss: 0.4488 - val_auc: 0.8038
+Epoch 2/100
+3668/3668 - 1564s - loss: 0.4384 - auc: 0.8145 - val_loss: 0.4470 - val_auc: 0.8055
+Epoch 3/100
+3668/3668 - 1556s - loss: 0.4321 - auc: 0.8208 - val_loss: 0.4468 - val_auc: 0.8057
+Epoch 4/100
+3668/3668 - 1556s - loss: 0.4293 - auc: 0.8235 - val_loss: 0.4469 - val_auc: 0.8057
+Epoch 5/100
+3668/3668 - 1560s - loss: 0.4281 - auc: 0.8247 - val_loss: 0.4470 - val_auc: 0.8056
+459/459 - 183s - loss: 0.4464 - auc: 0.8059
+2022-03-17 14:34:35.145288: W tensorflow/python/util/util.cc:348] Sets are not currently considered sequences, but this may change in the future, so consider avoiding using them.

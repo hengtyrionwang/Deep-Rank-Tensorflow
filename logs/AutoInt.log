@@ -1,0 +1,84 @@
+2022-03-15 22:08:49.549925: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2022-03-15 22:08:55.090774: I tensorflow/compiler/jit/xla_cpu_device.cc:41] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2022-03-15 22:08:55.182762: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcuda.so.1
+2022-03-15 22:08:55.244946: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties: 
+pciBusID: 0000:17:00.0 name: NVIDIA GeForce GTX 1080 Ti computeCapability: 6.1
+coreClock: 1.683GHz coreCount: 28 deviceMemorySize: 10.92GiB deviceMemoryBandwidth: 451.17GiB/s
+2022-03-15 22:08:55.245682: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 1 with properties: 
+pciBusID: 0000:65:00.0 name: NVIDIA GeForce GTX 1080 Ti computeCapability: 6.1
+coreClock: 1.683GHz coreCount: 28 deviceMemorySize: 10.91GiB deviceMemoryBandwidth: 451.17GiB/s
+2022-03-15 22:08:55.245706: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2022-03-15 22:08:55.278542: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.10
+2022-03-15 22:08:55.278651: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.10
+2022-03-15 22:08:55.295203: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2022-03-15 22:08:55.313136: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2022-03-15 22:08:55.334740: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.10
+2022-03-15 22:08:55.345065: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.10
+2022-03-15 22:08:55.374538: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.7
+2022-03-15 22:08:55.379209: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0, 1
+2022-03-15 22:08:55.379784: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  SSE4.1 SSE4.2 AVX AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2022-03-15 22:08:55.562273: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties: 
+pciBusID: 0000:17:00.0 name: NVIDIA GeForce GTX 1080 Ti computeCapability: 6.1
+coreClock: 1.683GHz coreCount: 28 deviceMemorySize: 10.92GiB deviceMemoryBandwidth: 451.17GiB/s
+2022-03-15 22:08:55.562746: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 1 with properties: 
+pciBusID: 0000:65:00.0 name: NVIDIA GeForce GTX 1080 Ti computeCapability: 6.1
+coreClock: 1.683GHz coreCount: 28 deviceMemorySize: 10.91GiB deviceMemoryBandwidth: 451.17GiB/s
+2022-03-15 22:08:55.562766: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2022-03-15 22:08:55.562788: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.10
+2022-03-15 22:08:55.562796: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.10
+2022-03-15 22:08:55.562804: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2022-03-15 22:08:55.562812: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2022-03-15 22:08:55.562820: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.10
+2022-03-15 22:08:55.562836: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.10
+2022-03-15 22:08:55.562855: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.7
+2022-03-15 22:08:55.568097: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0, 1
+2022-03-15 22:08:55.568130: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2022-03-15 22:08:56.210810: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1261] Device interconnect StreamExecutor with strength 1 edge matrix:
+2022-03-15 22:08:56.210865: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1267]      0 1 
+2022-03-15 22:08:56.210872: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1280] 0:   N Y 
+2022-03-15 22:08:56.210876: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1280] 1:   Y N 
+2022-03-15 22:08:56.212568: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1406] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10261 MB memory) -> physical GPU (device: 0, name: NVIDIA GeForce GTX 1080 Ti, pci bus id: 0000:17:00.0, compute capability: 6.1)
+2022-03-15 22:08:56.213648: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1406] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:1 with 10108 MB memory) -> physical GPU (device: 1, name: NVIDIA GeForce GTX 1080 Ti, pci bus id: 0000:65:00.0, compute capability: 6.1)
+2022-03-15 22:08:56.213848: I tensorflow/compiler/jit/xla_gpu_device.cc:99] Not creating XLA devices, tf_xla_enable_xla_devices not set
+WARNING:tensorflow:AutoGraph could not transform <function decode at 0x7f1f93b74790> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+WARNING:tensorflow:AutoGraph could not transform <bound method LinearLayer.call of <Layers.LinearLayer.LinearLayer object at 0x7f1f880a4130>> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+Epoch 1/100
+WARNING:tensorflow:AutoGraph could not transform <bound method EmbeddingLayer.call of <Layers.EmbeddingLayer.EmbeddingLayer object at 0x7f1f880a42e0>> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+WARNING:tensorflow:AutoGraph could not transform <bound method DeepNet.call of <Layers.DeepNet.DeepNet object at 0x7f1f880a40d0>> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+WARNING:tensorflow:AutoGraph could not transform <bound method MultiHeadAttentionNet.call of <Layers.MutiHeadAttentionNet.MultiHeadAttentionNet object at 0x7f1f88117760>> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+WARNING:tensorflow:AutoGraph could not transform <bound method MultiHeadAttentionLayer.call of <Layers.MultiHeadAttentionLayer.MultiHeadAttentionLayer object at 0x7f1f801f6ee0>> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+2022-03-15 22:08:58.400077: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:116] None of the MLIR optimization passes are enabled (registered 2)
+2022-03-15 22:08:58.435040: I tensorflow/core/platform/profile_utils/cpu_utils.cc:112] CPU Frequency: 3499910000 Hz
+2022-03-15 22:08:59.091120: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.10
+3668/3668 - 1885s - loss: 0.4603 - auc: 0.7934 - val_loss: 0.4472 - val_auc: 0.8048
+Epoch 2/100
+3668/3668 - 1737s - loss: 0.4411 - auc: 0.8109 - val_loss: 0.4433 - val_auc: 0.8087
+Epoch 3/100
+3668/3668 - 1733s - loss: 0.4340 - auc: 0.8183 - val_loss: 0.4430 - val_auc: 0.8092
+Epoch 4/100
+3668/3668 - 1740s - loss: 0.4302 - auc: 0.8222 - val_loss: 0.4433 - val_auc: 0.8090
+Epoch 5/100
+3668/3668 - 1741s - loss: 0.4283 - auc: 0.8240 - val_loss: 0.4436 - val_auc: 0.8088
+459/459 - 205s - loss: 0.4426 - auc: 0.8093
+2022-03-16 00:39:38.897608: W tensorflow/python/util/util.cc:348] Sets are not currently considered sequences, but this may change in the future, so consider avoiding using them.
+WARNING:absl:Found untraced functions such as dense_2_layer_call_and_return_conditional_losses, dense_2_layer_call_fn, dense_3_layer_call_and_return_conditional_losses, dense_3_layer_call_fn, dense_4_layer_call_and_return_conditional_losses while saving (showing 5 of 80). These functions will not be directly callable after loading.
+WARNING:absl:Found untraced functions such as dense_2_layer_call_and_return_conditional_losses, dense_2_layer_call_fn, dense_3_layer_call_and_return_conditional_losses, dense_3_layer_call_fn, dense_4_layer_call_and_return_conditional_losses while saving (showing 5 of 80). These functions will not be directly callable after loading.
