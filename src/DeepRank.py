@@ -25,7 +25,7 @@ from models.DeepCrossMix import DeepCrossMix
 from utils.utils import decode
 
 
-class DeepRecommend(object):
+class DeepRank(object):
     def __init__(self, options):
         self.options = options
 

@@ -10,7 +10,7 @@ LastEditTime: 2022-04-01 09:29:49
 
 import argparse
 import time
-from src.DeepRecommend import DeepRecommend
+from src.DeepRank import DeepRank
 
 def parse_args():
     date = time.strftime("%Y%m%d", time.localtime()) 
@@ -39,5 +39,5 @@ def parse_args():
 
 if __name__ == "__main__":
     args = parse_args()
-    DR = DeepRecommend(args)
+    DR = DeepRank(args)
     DR.train_model()
