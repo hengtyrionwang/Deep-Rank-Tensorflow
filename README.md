@@ -8,7 +8,7 @@
 
 #### Quick start with example data
 ==============================================
-- 1 cd DeepRecommend
+- 1 cd Deep-Rank-Tensorflow
 - 2 bash ./bin/converter_example.sh
 - 3 bash ./bin/train_model_example.sh
 - 4 push the saved model to tensorflow serving
