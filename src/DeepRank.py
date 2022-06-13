@@ -5,7 +5,7 @@ Author: Heng Tyrion Wang
 Date: 2022-03-02 16:28:27
 LastEditors: Heng Tyrion Wang
 Email: hengtyrionwang@gmail.com
-LastEditTime: 2022-04-01 09:50:24
+LastEditTime: 2022-06-09 21:16:00
 '''
 
 import sys
@@ -23,6 +23,7 @@ from models.DeepCrossV2 import DeepCrossV2
 from models.DeepCrossMix import DeepCrossMix
 
 from utils.utils import decode
+from utils.utils import scheduler
 
 
 class DeepRank(object):
@@ -71,7 +72,7 @@ class DeepRank(object):
         test_data = self.get_data("test")
         
         callback = tf.keras.callbacks.EarlyStopping(monitor='val_loss', patience=2, restore_best_weights=True)
-        lr_schedule = tf.keras.optimizers.schedules.ExponentialDecay(self.options.learning_rate, decay_steps=3000, decay_rate=0.5)
+        lr_schedule = tf.keras.optimizers.schedules.ExponentialDecay(self.options.learning_rate, decay_steps=self.options.decay_steps, decay_rate=self.options.decay_rate)
         model = self.get_model()
 
         if model == None:
@@ -80,7 +81,7 @@ class DeepRank(object):
         model.compile(optimizer=tf.keras.optimizers.Adam(learning_rate=lr_schedule),
                     loss=tf.keras.losses.BinaryCrossentropy(),
                     metrics=[tf.keras.metrics.AUC()])
-        model.fit(train_data, epochs = self.options.epochs, verbose=2, validation_data=valid_data, callbacks=[callback])
+        model.fit(train_data, epochs = self.options.epochs, verbose=self.options.verbose, validation_data=valid_data, callbacks=[callback])
         model.evaluate(test_data, verbose=2)
         model.save(self.options.saved_model_path + "/" + self.options.model_name + "/" + self.options.version)
 

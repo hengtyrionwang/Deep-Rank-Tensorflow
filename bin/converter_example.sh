@@ -22,5 +22,5 @@ data_type=("train" "test" "valid")
 
 for type in ${data_type[*]}
 do
-    python ${path}/script/converter.py ${path}/data/${type}_example.txt ${path}/tfdata/${type}.tfrecord
+    python ${path}/script/converter.py ${path}/data/${type}.txt ${path}/tfdata/${type}.tfrecord
 done

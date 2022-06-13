@@ -5,7 +5,7 @@ Author: Heng Tyrion Wang
 Date: 2022-03-09 08:18:49
 LastEditors: Heng Tyrion Wang
 Email: hengtyrionwang@gmail.com
-LastEditTime: 2022-04-01 09:29:49
+LastEditTime: 2022-06-09 21:17:00
 '''
 
 import argparse
@@ -14,7 +14,7 @@ from src.DeepRank import DeepRank
 
 def parse_args():
     date = time.strftime("%Y%m%d", time.localtime()) 
-    parser = argparse.ArgumentParser(description="Run Deep Recommend.")
+    parser = argparse.ArgumentParser(description="Run Deep Rank.")
     parser.add_argument('--model_name', nargs='?', default='DeepFM', help='model name.')
     parser.add_argument('--data_path', nargs='?', default='./tfdata', help='Input data path.')
     parser.add_argument('--saved_model_path', nargs='?', default='./saved_model', help='saved model path.')
@@ -29,12 +29,15 @@ def parse_args():
     parser.add_argument('--field_sub_dim', type=int, default=1, help='field sub dimension.')
     parser.add_argument('--dropout_rate', type=float, default=0.2, help='drop out rate')
     parser.add_argument('--l2_reg', type=float, default=0.0001, help='l2 regularizer')
+    parser.add_argument('--verbose', type=int, default=2, help='print type')
+    parser.add_argument('--decay_steps', type=int, default=7335, help='steps for learning rate decay')
+    parser.add_argument('--decay_rate', type=float, default= 0.5, help='rate of learning rate decay')
     parser.add_argument('--hidden_units', nargs='?', default='[512, 512, 512]', help='hidden layers configuration')
     parser.add_argument('--layer_size', nargs='?', default='[400, 400]', help='CIN layers configuration')
     parser.add_argument('--num_units', type=int, default=16, help='only used in AutoInt, num of units')
     parser.add_argument('--num_heads', type=int, default=2, help='only used in AutoInt, num of heads')
     parser.add_argument('--num_atten', type=int, default=2, help='only used in AutoInt, num of attention layers')
-    parser.add_argument('--num_cross', type=int, default=4, help='only used in DeepCross, DeepCrossV2 DeepCrossMix, num of attention layers')
+    parser.add_argument('--num_cross', type=int, default=4, help='only used in DeepCross, DeepCrossV2 DeepCrossMix, num of cross layers')
     return parser.parse_args()
 
 if __name__ == "__main__":

@@ -5,7 +5,7 @@ Author: Heng Tyrion Wang
 Date: 2022-03-02 16:27:54
 LastEditors: Heng Tyrion Wang
 Email: hengtyrionwang@gmail.com
-LastEditTime: 2022-03-02 17:47:59
+LastEditTime: 2022-06-05 08:09:38
 '''
 
 import tensorflow as tf
@@ -26,3 +26,9 @@ def decode(data):
     feature_idx = feature["feature_idx"]
     feature_vals = feature["feature_vals"]
     return (field_idx, field_sub_idx, feature_idx, feature_vals), label
+
+def scheduler(epoch, lr):
+    if epoch < 2:
+        return lr
+    else:
+        return lr*0.1
